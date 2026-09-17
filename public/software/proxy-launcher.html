@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arvectum Proxy Launcher 0.2.9 — документация</title>
+    <meta
+      name="description"
+      content="Функциональные характеристики, системные требования, установка и эксплуатация Arvectum Proxy Launcher 0.2.9 для Windows, Astra Linux и РЕД ОС."
+    />
+    <meta property="og:title" content="Arvectum Proxy Launcher 0.2.9 — документация" />
+    <meta
+      property="og:description"
+      content="Официальная документация ООО «Арвектум»: функции, установка, эксплуатация, восстановление, лицензия и поддержка Proxy Launcher 0.2.9."
+    />
+    <meta property="og:url" content="https://arvectum.com/software/proxy-launcher.html" />
+    <meta property="og:image" content="https://arvectum.com/assets/brand/logo-horizontal.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#041a33" />
+    <link rel="canonical" href="https://arvectum.com/software/proxy-launcher.html" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/brand/favicon.svg?v=20260616-seo24"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/brand/favicon-32x32.png?v=20260616-seo24"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/brand/favicon-16x16.png?v=20260616-seo24"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/brand/apple-touch-icon.png?v=20260616-seo24"
+    />
+    <link rel="shortcut icon" href="/favicon.ico?v=20260616-seo24" />
+    <link rel="stylesheet" href="/styles.css?v=20260628-prod2" />
+    <script id="organizationLd" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ООО \"Арвектум\"",
+        "alternateName": "Arvectum",
+        "url": "https://arvectum.com/",
+        "logo": "https://arvectum.com/assets/brand/logo-horizontal.svg",
+        "email": "info@arvectum.com"
+      }
+    </script>
+    <script id="softwareLd" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Arvectum Proxy Launcher",
+        "softwareVersion": "0.2.9",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows x64, Astra Linux 1.8 x86-64, РЕД ОС 8.0.3 x86-64",
+        "license": "https://github.com/arvectum2/proxy-launcher/blob/main/LICENSE",
+        "url": "https://arvectum.com/software/proxy-launcher.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ООО \"Арвектум\"",
+          "url": "https://arvectum.com/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-shell glass">
+          <div class="topbar">
+            <a class="brand" href="/" aria-label="Arvectum">
+              <img
+                src="/assets/brand/arvectum-logo-header-light.svg"
+                alt="Логотип Arvectum"
+              />
+            </a>
+            <nav class="desktop-nav" aria-label="Основная навигация">
+              <a class="nav-link" href="/">Главная</a>
+              <a class="nav-link" href="/solutions.html">Решения</a>
+              <a class="nav-link" href="/materials.html">Материалы</a>
+              <a class="nav-link" href="/contact.html">Контакты</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Программное обеспечение ООО «Арвектум»</p>
+          <h1>Arvectum Proxy Launcher 0.2.9</h1>
+          <p class="lead">
+            Локальное кроссплатформенное приложение для управления системными
+            proxy/PAC-настройками рабочего места, локальными HTTP/SOCKS5
+            endpoint'ами и безопасного восстановления исходной сетевой
+            конфигурации.
+          </p>
+          <p>
+            Эта страница содержит функциональные характеристики и сведения,
+            необходимые для установки и эксплуатации версии 0.2.9. Она не
+            является заявлением о включении продукта в Единый реестр
+            российского программного обеспечения.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Назначение и функциональные характеристики</h2>
+          <p>
+            Proxy Launcher централизует включение, отключение и восстановление
+            пользовательских системных proxy-настроек при работе через внешний
+            proxy-сервер, предоставленный пользователем или заказчиком.
+          </p>
+          <ul>
+            <li>управление системным proxy/PAC и bypass/no_proxy;</li>
+            <li>локальные HTTP и SOCKS5 endpoint'ы для клиентских приложений;</li>
+            <li>сохранение исходного состояния управляемых сетевых параметров;</li>
+            <li>штатный rollback при отключении;</li>
+            <li>восстановление после сбоя или перезагрузки;</li>
+            <li>
+              защита от разрушительного восстановления при обнаружении
+              стороннего изменения: неизвестное третье значение не
+              перезаписывается автоматически.
+            </li>
+          </ul>
+          <p>
+            Продукт является локальным desktop-приложением. Он не является VPN,
+            маршрутизатором, межсетевым экраном, сертифицированным средством
+            защиты информации или облачным сервисом. Внешний upstream proxy не
+            входит в поставку Proxy Launcher.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Поддерживаемые операционные системы</h2>
+          <ul>
+            <li>Microsoft Windows x64 — Setup и portable;</li>
+            <li>Astra Linux 1.8 x86-64 / Fly — пакет DEB;</li>
+            <li>РЕД ОС 8.0.3 x86-64 / KDE Plasma — пакет RPM.</li>
+          </ul>
+          <p>
+            Для Linux требуется NetworkManager и штатная desktop-интеграция
+            целевой системы. Для установки системного пакета нужны
+            административные права.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Получение и проверка дистрибутива</h2>
+          <p>
+            Канонический публичный релиз версии 0.2.9 размещён в GitHub Releases.
+            Перед установкой рекомендуется скачать также
+            <code>SHA256SUMS.txt</code> и сверить SHA-256 выбранного пакета.
+          </p>
+          <p>
+            <a
+              href="https://github.com/arvectum2/proxy-launcher/releases/tag/v0.2.9"
+              >Открыть релиз v0.2.9</a
+            >
+            ·
+            <a href="https://gitverse.ru/arvectum/proxy-launcher/releases"
+              >Российское зеркало релизов</a
+            >
+          </p>
+          <p>В релиз входят:</p>
+          <ul>
+            <li><code>Arvectum-Proxy-Launcher-0.2.9-windows-x64-setup.exe</code>;</li>
+            <li><code>Arvectum-Proxy-Launcher-0.2.9-windows-x64-portable.zip</code>;</li>
+            <li><code>Arvectum-Proxy-Launcher-0.2.9-astra-linux-amd64.deb</code>;</li>
+            <li><code>Arvectum-Proxy-Launcher-0.2.9-redos-linux-x86_64.rpm</code>;</li>
+            <li><code>SHA256SUMS.txt</code>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Установка и запуск</h2>
+          <h3>Windows x64</h3>
+          <p>
+            Запустите
+            <code>Arvectum-Proxy-Launcher-0.2.9-windows-x64-setup.exe</code>
+            и завершите установку для текущего пользователя. Альтернативно можно
+            распаковать portable ZIP и запустить приложение из него. Версия
+            0.2.9 не заявляет Authenticode-подпись; отключать Defender,
+            SmartScreen или firewall для установки не требуется.
+          </p>
+
+          <h3>Astra Linux 1.8 x86-64</h3>
+          <pre><code>sudo apt install ./Arvectum-Proxy-Launcher-0.2.9-astra-linux-amd64.deb
+arvectum-proxy-launcher</code></pre>
+          <p>
+            Целевая среда использует NetworkManager и GSettings для desktop
+            proxy integration.
+          </p>
+
+          <h3>РЕД ОС 8.0.3 x86-64</h3>
+          <pre><code>sudo dnf install ./Arvectum-Proxy-Launcher-0.2.9-redos-linux-x86_64.rpm
+arvectum-proxy-launcher</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Эксплуатация</h2>
+          <ol>
+            <li>Запустите Proxy Launcher.</li>
+            <li>
+              Укажите параметры внешнего upstream proxy, разрешённого вашей
+              организацией или предоставленного вашим провайдером.
+            </li>
+            <li>Проверьте bypass/no_proxy исключения.</li>
+            <li>Включите Proxy Launcher.</li>
+            <li>
+              Убедитесь, что системный proxy/PAC и локальный endpoint отражают
+              ожидаемую конфигурацию, затем проверьте целевое приложение.
+            </li>
+            <li>
+              Для завершения работы используйте штатное отключение и убедитесь,
+              что исходные сетевые параметры восстановлены.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Аварийное восстановление</h2>
+          <p>
+            Перед изменением управляемых параметров Proxy Launcher сохраняет
+            доказуемое исходное состояние. После сбоя или перезапуска recovery
+            восстанавливает только значения, которые распознаются как исходные
+            или ранее применённые самим приложением. Если пользователь или
+            администратор установил третье значение, destructive rollback
+            прекращается вместо автоматической перезаписи неизвестного
+            состояния.
+          </p>
+          <p>
+            При незавершённом recovery не удаляйте вручную данные восстановления.
+            Сначала завершите штатное восстановление, затем обновляйте или
+            удаляйте приложение.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Удаление</h2>
+          <p>
+            Перед удалением штатно отключите активный proxy lifecycle и
+            убедитесь, что исходная конфигурация восстановлена. На Windows
+            используйте стандартное удаление установленного приложения. На
+            Astra Linux и РЕД ОС удалите установленный пакет штатным менеджером
+            пакетов после завершения rollback/recovery.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Лицензия и стоимость</h2>
+          <p>
+            Публичная редакция Arvectum Proxy Launcher 0.2.9 распространяется
+            на условиях MIT License. Отдельный активационный ключ и лицензионный
+            сервер не требуются; лицензионная плата за публичную MIT-редакцию не
+            взимается.
+          </p>
+          <p>
+            <a href="https://github.com/arvectum2/proxy-launcher/blob/main/LICENSE"
+              >Текст MIT License</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Поддержка и правообладатель</h2>
+          <p>
+            ООО «Арвектум» · ИНН 7716261422 · ОГРН 1267700213725<br />
+            Электронная почта:
+            <a href="mailto:info@arvectum.com">info@arvectum.com</a>
+          </p>
+          <p>
+            Исходный код, история версий и публичный технический issue tracker:
+            <a href="https://github.com/arvectum2/proxy-launcher"
+              >github.com/arvectum2/proxy-launcher</a
+            >.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 ООО «Арвектум».</p>
+        <nav aria-label="Юридическая информация">
+          <a href="/privacy.html">Политика конфиденциальности</a>
+          ·
+          <a href="/personal-data-consent.html">Согласие на обработку данных</a>
+          ·
+          <a href="/cookies.html">Cookie</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
